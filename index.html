@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prajapati Rahul - About Me</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 80px auto;
+      background: #1a1a1a;
+      padding: 50px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 255, 255, 0.15);
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1, h2 {
+      color: #00e0ff;
+      text-align: center;
+      margin-bottom: 30px;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .paragraph {
+      font-size: 17px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateX(-30px);
+      animation: slideFade 0.8s ease-in-out forwards;
+    }
+
+    .paragraph:nth-of-type(n) {
+      animation-delay: calc(0.2s * var(--i, 1));
+    }
+
+    @keyframes slideFade {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .profile-photo {
+      display: block;
+      margin: 0 auto 30px auto;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00e0ff;
+      box-shadow: 0 0 15px rgba(0, 224, 255, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile-photo:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 30px rgba(0, 224, 255, 0.8);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      background-color: #222;
+      color: #fff;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #00e0ff;
+      border: none;
+      border-radius: 8px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .comment-box {
+      margin-top: 50px;
+      border-top: 1px solid #333;
+      padding-top: 30px;
+    }
+
+    .comment {
+      background: #2a2a2a;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      white-space: pre-line;
+    }
+
+    a {
+      color: #00e0ff;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      .profile-photo {
+        width: 130px;
+        height: 130px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="IMG_20250531_080350_637.jpg" alt="Prajapati Rahul" class="profile-photo" />
+    <h1>Prajapati Rahul</h1>
+
+    <p class="paragraph" style="--i:1">
+      Hello and welcome! My name is <strong>Prajapati Rahul</strong>, and I currently work as an <strong>Accountant</strong> at <strong>Global Textile Private Limited Company</strong>. I bring with me a strong work ethic, sharp focus, and a continuous drive to learn and grow — not just in accounting, but in various tech domains as well.
+    </p>
+
+    <p class="paragraph" style="--i:2">
+      I have always been passionate about technology. Over time, I’ve taken a deep interest in <strong>cybersecurity, ethical hacking, networking, and digital creativity</strong>. I actively learn through platforms like <strong>TryHackMe</strong>, and I’ve started working with tools such as <strong>Kali Linux, Nmap, Wireshark, and Burp Suite</strong>. These tools are helping me build real-world skills in cybersecurity, penetration testing, and system/network security.
+    </p>
+
+    <p class="paragraph" style="--i:3">
+      Besides cybersecurity, I also have a strong interest in <strong>video and photo editing</strong>. I love working with powerful creative tools like <strong>Adobe Photoshop, Adobe Premiere Pro, and After Effects</strong>. Editing allows me to express ideas visually and creatively — whether for social media, storytelling, or professional design work.
+    </p>
+
+    <p class="paragraph" style="--i:4">
+      What makes my journey unique is the balance I maintain between numbers and networks — between accounting and ethical hacking, between financial reports and digital visuals. I believe that in today’s world, a smart professional needs to have a <strong>mix of technical, creative, and practical thinking</strong>.
+    </p>
+
+    <p class="paragraph" style="--i:5">
+      My vision is to grow every day — to learn something new, improve existing skills, and stay open to fresh ideas. I’m not afraid of starting from scratch, and I value self-discipline, patience, and honest hard work.
+    </p>
+
+    <p class="paragraph" style="--i:6">
+      I also believe in sharing knowledge and learning with others. Whether it's helping someone solve a computer problem or guiding them on how to edit a video, I always enjoy being part of that learning journey. Collaboration and curiosity are at the heart of everything I do.
+    </p>
+
+    <p class="paragraph" style="--i:7">
+      In the future, I see myself growing into a <strong>multiskilled digital professional</strong> — someone who can manage accounts, build secure systems, and create engaging visual content — all with a calm, focused approach and a problem-solving mindset.
+    </p>
+
+    <p class="paragraph" style="--i:8">
+      Thank you so much for visiting this page and taking the time to get to know me. The journey is long, but every step counts — and I’m just getting started.
+    </p>
+
+    <h2>About Us</h2>
+    <p class="paragraph" style="--i:9">
+      I come from a small town in the vibrant state of Jharkhand, India. Growing up in a simple environment taught me the value of hard work, patience, and staying connected to my roots. 
+      <br><br>
+      This background shaped who I am — someone who believes that no dream is too big, no place too small. With curiosity and determination, I stepped into the world of technology, digital design, and cybersecurity.
+      <br><br>
+      This website is a reflection of that journey. It's not just about skills or achievements — it’s about growth, learning, and staying humble. Whether you’re from a big city or a small town, I believe we all have something powerful to share with the world.
+      <br><br>
+      Thank you for being part of my journey.
+    </p>
+
+    <h2>Contact</h2>
+    <p class="paragraph" style="--i:10">
+      📧 Email: <a href="mailto:rahulraj7645937820@gmail.com">rahulraj7645937820@gmail.com</a>
+    </p>
+
+    <div class="comment-box">
+      <h2>Leave a Comment</h2>
+      <input type="text" id="name" placeholder="Your Name" />
+      <textarea id="message" rows="4" placeholder="Your Comment"></textarea>
+      <button onclick="postComment()">Post</button>
+      <div id="commentsList"></div>
+    </div>
+
+    <footer>
+      Made with ❤ by Prajapati Rahul
+    </footer>
+  </div>
+
+  <script>
+    function postComment() {
+      const name = document.getElementById("name").value.trim();
+      const message = document.getElementById("message").value.trim();
+      if (!name || !message) {
+        alert("Please enter both name and comment.");
+        return;
+      }
+      const comment = document.createElement("div");
+      comment.className = "comment";
+      comment.innerHTML = <strong>${name}</strong><p>${message}</p>;
+      document.getElementById("commentsList").prepend(comment);
+      document.getElementById("name").value = "";
+      document.getElementById("message").value = "";
+    }
+  </script>
+
+</body>
+</html>
